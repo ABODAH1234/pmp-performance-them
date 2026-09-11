@@ -1,0 +1,15 @@
+{#
+| Variable         | Type       | Description                                                         |
+|------------------|------------|---------------------------------------------------------------------|
+| page             | object     |                                                                     |
+| page.title       | string     | *could be html                                                      |
+| page.slug        | string     | ex: "cat.show"                                                      |
+#}
+{% extends "layouts.master" %}
+{% block content %}
+    {% component home %}
+    <section id="pmp-products" class="container pmp-catalog"><div class="pmp-section-heading"><h2>{{ trans('pmp.all_products') }}</h2></div><salla-products-list source="latest" limit="32"></salla-products-list></section>
+{% endblock %}
+{% block scripts %}
+    <script defer src="{{ 'home.js' | asset }}"></script>
+{% endblock %}

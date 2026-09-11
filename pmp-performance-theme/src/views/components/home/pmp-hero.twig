@@ -1,0 +1,4 @@
+<section class="pmp-hero container" component-id="{{ componentId }}">
+  <div class="pmp-hero__copy"><p class="pmp-eyebrow">{{ component.eyebrow }}</p><h1>{{ component.title }}</h1><p class="pmp-intro">{{ component.description }}</p>{% if component.url %}<a class="pmp-cta" href="{{ component.url }}">{{ component.button }} <i class="sicon-arrow-left" aria-hidden="true"></i></a>{% endif %}</div>
+  {% if component.image %}<figure class="pmp-hero__visual"><img src="{{ component.image }}" alt="{{ component.caption }}" width="600" height="600" fetchpriority="high"><figcaption>{{ component.caption }}</figcaption></figure>{% endif %}
+</section>
