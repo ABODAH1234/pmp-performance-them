@@ -1,0 +1,8 @@
+<section id="pmp-policies" class="pmp-policies container" component-id="{{ componentId }}">
+  <div class="pmp-section-heading"><h2>{{ component.title }}</h2><span>STORE POLICIES</span></div>
+  <div class="pmp-policy-grid">
+    {% for item in component.items %}
+      <article class="pmp-policy-card"><h3>{{ item.title }}</h3><p>{{ item.description }}</p></article>
+    {% endfor %}
+  </div>
+</section>

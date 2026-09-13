@@ -1,0 +1,8 @@
+<section class="pmp-special-orders container" component-id="{{ componentId }}">
+  <div class="pmp-section-heading"><h2>{{ component.title }}</h2><span>REQUEST A PART</span></div>
+  <div class="pmp-request-grid">
+    {% for item in component.items %}
+      <article class="pmp-request-card"><span class="pmp-request-card__label">{{ item.label }}</span><h3>{{ item.title }}</h3><p>{{ item.description }}</p><a class="pmp-request-card__cta" href="{{ item.url ?: 'mailto:' ~ store.contacts.email }}">{{ item.button }} <i class="sicon-arrow-left" aria-hidden="true"></i></a></article>
+    {% endfor %}
+  </div>
+</section>

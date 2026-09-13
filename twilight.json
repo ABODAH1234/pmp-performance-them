@@ -1,8 +1,9 @@
 {
   "name": {
-    "ar": "PMP Performance",
+    "ar": "باور ماتش بيرفورمنس",
     "en": "PMP Performance"
   },
+  "repository": "https://github.com/ABODAH1234/pmp-performance-them",
   "author_email": "info@pmpperformance.online",
   "features": [
     "mega-menu",
@@ -279,171 +280,27 @@
       "required": false,
       "value": false,
       "selected": false
+    },
+    {
+      "id": "pmp_whatsapp",
+      "type": "string",
+      "format": "text",
+      "label": "رقم واتساب PMP",
+      "description": "اكتب الرقم بصيغة دولية بدون +، مثال 9665XXXXXXXX",
+      "value": "",
+      "required": false
+    },
+    {
+      "id": "pmp_snapchat",
+      "type": "string",
+      "format": "text",
+      "label": "اسم مستخدم سناب شات PMP",
+      "description": "اكتب اسم المستخدم فقط بدون @",
+      "value": "",
+      "required": false
     }
   ],
   "components": [
-    {
-      "key": "400506fb-ef76-42b2-948a-4c4b1272effc",
-      "title": {
-        "ar": "PMP — البنر الرئيسي",
-        "en": "PMP — Signature Hero"
-      },
-      "icon": "sicon-image",
-      "path": "home.pmp-hero",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "eyebrow",
-          "type": "string",
-          "format": "text",
-          "label": "النص العلوي",
-          "value": "POWER MATCH PERFORMANCE",
-          "required": false,
-          "multilanguage": false
-        },
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان",
-          "value": "كل مشروع قوي يبدأ بالقطعة الصح.",
-          "required": false,
-          "multilanguage": false
-        },
-        {
-          "id": "description",
-          "type": "string",
-          "format": "textarea",
-          "label": "الوصف",
-          "value": "كلتشات PMP وقطع أداء مختارة لمحركك. تصفح التجهيزات وطابق رقم القطعة مع سيارتك.",
-          "required": false,
-          "multilanguage": false
-        },
-        {
-          "id": "image",
-          "type": "string",
-          "format": "image",
-          "label": "صورة البنر",
-          "value": "https://cdn.salla.sa/KjwzEg/6bd30f8e-b7da-4017-bbea-9a91c3150c51-500x500-zZRYKKpbNXEWi7IqrfZSVjeWomygsuptqLINBInM.jpg",
-          "required": false,
-          "multilanguage": false
-        },
-        {
-          "id": "button",
-          "type": "string",
-          "format": "text",
-          "label": "نص الزر",
-          "value": "اكتشف المنتجات",
-          "required": false,
-          "multilanguage": false
-        },
-        {
-          "id": "url",
-          "type": "string",
-          "format": "text",
-          "label": "رابط الزر",
-          "value": "#pmp-products",
-          "required": false,
-          "multilanguage": false
-        },
-        {
-          "id": "caption",
-          "type": "string",
-          "format": "text",
-          "label": "عنوان الصورة",
-          "value": "PMP / TWIN PLATE",
-          "required": false,
-          "multilanguage": false
-        }
-      ]
-    },
-    {
-      "key": "55b42dcf-4461-4ada-a60e-1e0143eff6b5",
-      "title": {
-        "ar": "PMP — بوابات الأقسام",
-        "en": "PMP — Departments"
-      },
-      "icon": "sicon-layout-grid",
-      "path": "home.pmp-departments",
-      "is_default": true,
-      "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "format": "text",
-          "label": "العنوان",
-          "value": "تجهيزك يبدأ من هنا",
-          "required": false,
-          "multilanguage": false
-        },
-        {
-          "id": "items",
-          "type": "collection",
-          "format": "collection",
-          "label": "الأقسام",
-          "minLength": 1,
-          "maxLength": 6,
-          "value": [
-            {
-              "items.number": "01",
-              "items.title": "كلتشات PMP",
-              "items.subtitle": "1FZ · TB48 · RB25 · L24 · L28",
-              "items.url": "#pmp-products"
-            },
-            {
-              "items.number": "02",
-              "items.title": "تجهيز محركات LS",
-              "items.subtitle": "أصياخ · سبرنق دبل · تكايات · تايمنق",
-              "items.url": "#pmp-products"
-            },
-            {
-              "items.number": "03",
-              "items.title": "فلاتر وبواجي",
-              "items.subtitle": "السحب والإشعال",
-              "items.url": "#pmp-products"
-            }
-          ],
-          "fields": [
-            {
-              "id": "items.number",
-              "type": "string",
-              "format": "text",
-              "label": "الرقم",
-              "value": "01",
-              "required": false,
-              "multilanguage": false
-            },
-            {
-              "id": "items.title",
-              "type": "string",
-              "format": "text",
-              "label": "اسم القسم",
-              "value": "",
-              "required": false,
-              "multilanguage": false
-            },
-            {
-              "id": "items.subtitle",
-              "type": "string",
-              "format": "text",
-              "label": "الوصف",
-              "value": "",
-              "required": false,
-              "multilanguage": false
-            },
-            {
-              "id": "items.url",
-              "type": "string",
-              "format": "text",
-              "label": "رابط القسم",
-              "value": "",
-              "required": false,
-              "multilanguage": false
-            }
-          ]
-        }
-      ]
-    },
     {
       "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
       "title": {
@@ -1301,12 +1158,295 @@
           "maxLength": 30
         }
       ]
+    },
+    {
+      "key": "400506fb-ef76-42b2-948a-4c4b1272effc",
+      "title": {
+        "ar": "بنر PMP الرئيسي",
+        "en": "PMP Main Banner"
+      },
+      "icon": "sicon-image",
+      "path": "home.pmp-hero",
+      "is_default": true,
+      "fields": [
+        {
+          "id": "eyebrow",
+          "type": "string",
+          "format": "text",
+          "label": "النص العلوي",
+          "value": "POWER MATCH PERFORMANCE",
+          "required": false
+        },
+        {
+          "id": "title",
+          "type": "string",
+          "format": "text",
+          "label": "العنوان",
+          "value": "قطع أداء مختارة لمشروعك.",
+          "required": false
+        },
+        {
+          "id": "description",
+          "type": "string",
+          "format": "textarea",
+          "label": "الوصف",
+          "value": "كلتشات PMP وقطع تعديل لمحركات GM LS وقطع مختارة لمشاريع الأداء.",
+          "required": false
+        },
+        {
+          "id": "image",
+          "type": "string",
+          "format": "image",
+          "label": "صورة البنر الرئيسية",
+          "value": null,
+          "required": false
+        },
+        {
+          "id": "button",
+          "type": "string",
+          "format": "text",
+          "label": "نص الزر",
+          "value": "تصفح المنتجات",
+          "required": false
+        },
+        {
+          "id": "url",
+          "type": "string",
+          "format": "text",
+          "label": "رابط الزر",
+          "value": "#pmp-products",
+          "required": false
+        },
+        {
+          "id": "caption",
+          "type": "string",
+          "format": "text",
+          "label": "عنوان البنر",
+          "value": "PMP PERFORMANCE",
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "55b42dcf-4461-4ada-a60e-1e0143eff6b5",
+      "title": {
+        "ar": "أقسام PMP",
+        "en": "PMP Departments"
+      },
+      "icon": "sicon-layout-grid",
+      "path": "home.pmp-departments",
+      "is_default": true,
+      "fields": [
+        {
+          "id": "title",
+          "type": "string",
+          "format": "text",
+          "label": "العنوان",
+          "value": "تسوق حسب القطعة",
+          "required": false
+        },
+        {
+          "id": "items",
+          "type": "collection",
+          "format": "collection",
+          "label": "الأقسام",
+          "required": true,
+          "minLength": 3,
+          "maxLength": 3,
+          "value": [
+            {
+              "items.number": "01",
+              "items.title": "كلتشات PMP",
+              "items.subtitle": "1FZ · TB48 · RB25 · L24 · L28 · ددسن",
+              "items.url": "#pmp-products"
+            },
+            {
+              "items.number": "02",
+              "items.title": "قطع محركات GM LS",
+              "items.subtitle": "أصياخ · سبرنق دبل · تكايات · تايمنق",
+              "items.url": "#pmp-products"
+            },
+            {
+              "items.number": "03",
+              "items.title": "فلاتر وبواجي",
+              "items.subtitle": "K&N · NGK · قطع دعم المشاريع",
+              "items.url": "#pmp-products"
+            }
+          ],
+          "fields": [
+            {
+              "id": "items.number",
+              "type": "string",
+              "format": "text",
+              "label": "الرقم",
+              "value": "01"
+            },
+            {
+              "id": "items.title",
+              "type": "string",
+              "format": "text",
+              "label": "اسم القسم",
+              "value": ""
+            },
+            {
+              "id": "items.subtitle",
+              "type": "string",
+              "format": "text",
+              "label": "الوصف",
+              "value": ""
+            },
+            {
+              "id": "items.url",
+              "type": "string",
+              "format": "text",
+              "label": "الرابط",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "a4706fb0-aea2-4bb8-a9e7-7cf6fd4a4b73",
+      "title": {
+        "ar": "الطلبات الخاصة",
+        "en": "Special Orders"
+      },
+      "icon": "sicon-inbox-full",
+      "path": "home.pmp-special-orders",
+      "is_default": true,
+      "fields": [
+        {
+          "id": "title",
+          "type": "string",
+          "format": "text",
+          "label": "العنوان",
+          "value": "ما لقيت قطعتك؟",
+          "required": false
+        },
+        {
+          "id": "items",
+          "type": "collection",
+          "format": "collection",
+          "label": "خيارات الطلب",
+          "required": true,
+          "minLength": 2,
+          "maxLength": 2,
+          "value": [
+            {
+              "items.label": "SPECIAL ORDER",
+              "items.title": "طلب قطع تعديل",
+              "items.description": "أرسل رقم القطعة أو مواصفات السيارة، ونرجع لك بالتوفر والسعر.",
+              "items.button": "اطلب قطع تعديل",
+              "items.url": "mailto:info@pmpperformance.online?subject=طلب%20قطع%20تعديل"
+            },
+            {
+              "items.label": "OEM REQUEST",
+              "items.title": "طلب قطع وكالة",
+              "items.description": "أرسل رقم الشاص أو رقم القطعة المطلوب للتأكد من المطابقة والتوفر.",
+              "items.button": "اطلب قطع وكالة",
+              "items.url": "mailto:info@pmpperformance.online?subject=طلب%20قطع%20وكالة"
+            }
+          ],
+          "fields": [
+            {
+              "id": "items.label",
+              "type": "string",
+              "format": "text",
+              "label": "التصنيف",
+              "value": ""
+            },
+            {
+              "id": "items.title",
+              "type": "string",
+              "format": "text",
+              "label": "العنوان",
+              "value": ""
+            },
+            {
+              "id": "items.description",
+              "type": "string",
+              "format": "textarea",
+              "label": "الوصف",
+              "value": ""
+            },
+            {
+              "id": "items.button",
+              "type": "string",
+              "format": "text",
+              "label": "نص الزر",
+              "value": ""
+            },
+            {
+              "id": "items.url",
+              "type": "string",
+              "format": "text",
+              "label": "الرابط",
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "c1a4a740-2609-4325-b6cf-7a68203f2a9c",
+      "title": {
+        "ar": "سياسات المتجر",
+        "en": "Store Policies"
+      },
+      "icon": "sicon-document",
+      "path": "home.pmp-policies",
+      "is_default": true,
+      "fields": [
+        {
+          "id": "title",
+          "type": "string",
+          "format": "text",
+          "label": "العنوان",
+          "value": "سياسات PMP",
+          "required": false
+        },
+        {
+          "id": "items",
+          "type": "collection",
+          "format": "collection",
+          "label": "السياسات",
+          "required": true,
+          "minLength": 2,
+          "maxLength": 2,
+          "value": [
+            {
+              "items.title": "الشحن والتسليم",
+              "items.description": "يتم تأكيد توفر القطعة وموعد الشحن بعد مراجعة الطلب. الشحن من الجبيل إلى السعودية والخليج، وتصل معلومات التتبع عند تجهيز الشحنة."
+            },
+            {
+              "items.title": "الاستبدال والاسترجاع",
+              "items.description": "لأن قطع الأداء تختلف حسب التطبيق، راجع رقم القطعة ومواصفات سيارتك قبل الطلب. تواصل معنا قبل الإرجاع أو الاستبدال ليتم التحقق من حالة القطعة والطلب."
+            }
+          ],
+          "fields": [
+            {
+              "id": "items.title",
+              "type": "string",
+              "format": "text",
+              "label": "العنوان",
+              "value": ""
+            },
+            {
+              "id": "items.description",
+              "type": "string",
+              "format": "textarea",
+              "label": "النص",
+              "value": ""
+            }
+          ]
+        }
+      ]
     }
   ],
   "support_url": "https://salla.com/",
   "description": {
-    "ar": "مجموعة كبيرة من المزايا لدعم تجارتك وتقديم تجربة تسوق مثيرة لعملائك",
-    "en": "A wide range of features to support your business and provide an exciting shopping experience for your customers"
-  },
-  "repository": "https://github.com/ABODAH1234/pmp-performance-them"
+    "ar": "ثيم PMP Performance لقطع وتعديلات أداء السيارات.",
+    "en": "PMP Performance automotive parts theme."
+  }
 }

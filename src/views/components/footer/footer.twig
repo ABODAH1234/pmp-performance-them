@@ -58,14 +58,19 @@
 				</div>
 			</div>
 
-			<salla-apps-icons data-testid="store-footer-apps" class="lg:col-span-2 rtl:lg:pr-20 ltr:lg:pl-20"></salla-apps-icons>
+			<div class="lg:col-span-2 pmp-footer-service rtl:lg:pr-20 ltr:lg:pl-20">
+        <h3>خدمة العملاء</h3>
+        <a href="{{ link('/') }}#pmp-policies">سياسة الشحن والتسليم</a>
+        <a href="{{ link('/') }}#pmp-policies">سياسة الاستبدال والاسترجاع</a>
+        {% if theme.settings.get('pmp_whatsapp') %}<a class="pmp-social-link" href="https://wa.me/{{ theme.settings.get('pmp_whatsapp') }}" target="_blank" rel="noopener"><i class="sicon-whatsapp"></i> واتساب</a>{% endif %}
+        {% if theme.settings.get('pmp_snapchat') %}<a class="pmp-social-link" href="https://www.snapchat.com/add/{{ theme.settings.get('pmp_snapchat') }}" target="_blank" rel="noopener"><i class="sicon-snapchat"></i> سناب شات</a>{% endif %}
+      </div>
 
 		</div>
 	</div>
 
 	<div class="md:flex items-center justify-between py-4 container text-center">
 		<span class="text-sm copyright-text">{% hook copyright %}</span>
-		<salla-payments data-testid="store-footer-payments"></salla-payments>
 	</div>
 </div>
 
